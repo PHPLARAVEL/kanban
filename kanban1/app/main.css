@@ -1,4 +1,54 @@
+*{
+    margin:0;
+    padding: 0
+}
 body{
     background: cornsilk;
-    color: green;
+    color: #54D09F;
+}
+
+.add-note{
+    padding:0.1em 0.1em;
+    text-align: center;
+    color: #fff;
+    border: none;
+    margin: 0.5em;
+    background-color: #4CAE4C ;
+}
+
+.add-note:hover{
+    background-color: #54D09F;
+}
+
+.notes{
+    max-width: 11em;
+    margin: 0.5em;
+    list-style: none;
+}
+
+.note{
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border:solid 1px #fdfdfd;
+    box-shadow: 0 0 0.3em 0.03em rgba(0,0,0,0.3);
+}
+.note:hover{
+    box-shadow: 0 0 0.3em 0.03em rgba(0,0,0,0.7);
+}
+
+.note .task{
+    display: inline-block;
+}
+
+
+.note .delete-note{
+    float: right;
+    background-color: #fdfdfd;
+    border: none;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.note:hover .delete-note{
+    visibility: visible;
 }
